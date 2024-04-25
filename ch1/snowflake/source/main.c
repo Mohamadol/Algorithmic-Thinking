@@ -1,15 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "types.h"
 #include "snowflake.h"
+#include "utils.h"
 
 #define MAX_N 100000
 
-typedef unsigned int uint;
-
 int main(void)
 {
-
     //--------------------------------- read n: the number of snowflakes ---------------------------------
     uint n;
     printf("Please enter the number of snowflakes: ");
@@ -60,7 +59,10 @@ int main(void)
         print_snow(sf + i);
     }
 
-    
+    if (mathcing_flakes(sf, n))
+        printf("found matching flakes\n");
+    else
+        printf("no matching flakes were found!\n");
 
     free(sf);
     return EXIT_SUCCESS;

@@ -1,10 +1,13 @@
+#ifndef SNOWFLAKE_H
+#define SNOWFLAKE_H
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include "types.h"
 
 #define MAX_LENGTH 10000000
 #define arms 6
-typedef unsigned long int ulong;
 
 typedef struct
 {
@@ -23,3 +26,5 @@ void print_snow(const Snowflake *flake)
     }
     printf("\n----------\n");
 }
+
+#endif

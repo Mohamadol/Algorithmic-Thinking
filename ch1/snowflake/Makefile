@@ -1,6 +1,6 @@
 # Compiler and linker configurations
 CC = gcc
-CFLAGS = -Wall -Iheader
+CFLAGS = -Wall -Iheader -g
 # LDFLAGS = 
 
 # Directories
